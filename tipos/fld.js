@@ -5,8 +5,7 @@ const constante = require('./const.js')
 
 const isFld = (arg) => {
     if (arg == '*') return 'TODOS'
-    if (reserv.isReserv(arg) || comp.isComp(arg) || constante.isConst(arg)) return false
-    if (arg.match(/[r-z]/g)) return false
+    if (reserv.isReserv(arg) || comp.isComp(arg) || constante.isConst(arg) || arg.match(/[r-z]/g) || arg === '') return false
     return true;
 }
 
