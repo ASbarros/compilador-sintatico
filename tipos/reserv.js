@@ -1,3 +1,3 @@
-const isReserv = (arg) => arg.toUpperCase() === 'SELECT' || arg.toUpperCase() === 'FROM' || arg.toUpperCase() === 'WHERE' || arg.toUpperCase() === 'LIKE'
+const isReserv = (arg) => arg === 'select' || arg === 'from' || arg === 'where' || arg === 'like'
 
 module.exports = { isReserv }
